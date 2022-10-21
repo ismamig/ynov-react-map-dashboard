@@ -4,6 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import * as firebase from "firebase";
+
+const config = {
+  apiKey: "AIzaSyA5pPKO8J9sR1m3hyPu7WJw2MzIu0z0q6o",
+  authDomain: "react-tchat-e518d.firebaseapp.com",
+  databaseURL: "https://react-tchat-e518d.firebaseio.com",
+  storageBucket: "react-tchat-e518d.appspot.com",
+  messagingSenderId: "640840838780"
+};
+
+firebase.initializeApp(config);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
