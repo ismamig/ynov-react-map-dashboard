@@ -1,6 +1,8 @@
 .navContainer {
     width: 300px;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 ul {
     list-style-type: none;
@@ -11,10 +13,69 @@ li {
     padding: 10px;
     /*border-bottom: 1px solid #ccc;*/
 }
-/*li:last-child {*/
-/*    border-bottom: none;*/
-/*}*/
-/*li:hover {*/
-/*    background-color: #f5f5f5;*/
-/*    cursor: pointer;*/
-/*}*/
+
+.sublistContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.addMarkerContainer {
+    display:flex;
+    flex-direction: column;
+}
+.addMarkerContainer > * {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: .5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+button:hover {
+    background-color: #3e8e41;
+}
+
+.link {
+    color: cornflowerblue;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+input {
+    padding: .5rem .2rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.userInfos {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+.userInfos span {
+    text-align: left;
+    margin: 0 0 .5rem .5rem;
+}
+.userInfos button {
+    background: crimson;
+}
+
+.userInfos button:hover {
+    background: #b30000;
+}
